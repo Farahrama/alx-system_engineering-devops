@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""
+This module contains functions to interact with the Reddit API.
+"""
 import requests
+
 
 def top_ten(subreddit):
     """Prints the titles of the top 10 hot posts for a given subreddit."""
@@ -17,5 +21,7 @@ def top_ten(subreddit):
             print(None)
     except requests.RequestException:
         print(None)
+
+
 
 
