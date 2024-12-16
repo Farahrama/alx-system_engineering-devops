@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# loops that displays 10 "Best School" and then Hi
+a=1
+while [ $a -le 10 ]
+do
+    echo "Best School"
+    a=$(( a + 1 ))
+if [ $a -eq 10 ]
+then
+    echo "Hi"
+fi
+done
