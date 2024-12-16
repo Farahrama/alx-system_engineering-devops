@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
-a=1
-while [ $a -le 10 ]
+for (( a=1; a <= 10; a++ ))
 do
     echo "Best School"
-    a=$(( a + 1  ))
 done
