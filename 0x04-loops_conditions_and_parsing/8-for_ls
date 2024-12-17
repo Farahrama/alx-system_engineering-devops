@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script to display the content of the current directory in a modified format
+for file in *; do
+    if [[ $file == *-* ]]; then
+        echo "${file#*-}"
+    else
+        echo "$file"
+    fi
+done
